@@ -1,0 +1,19 @@
+2021-11-12 15:10:27,093 - octolapse.__init__ - INFO - Started logging to file.
+2021-11-12 15:10:27,120 - octolapse.settings - INFO - Creating settings from iterable.
+2021-11-12 15:10:27,127 - octolapse.__init__ - ERROR - An unexpected error occurred on startup.
+Traceback (most recent call last):
+  File "c:\OctoPrint\venv\lib\site-packages\octoprint_octolapse\__init__.py", line 2311, in on_startup
+    self.load_settings()
+  File "c:\OctoPrint\venv\lib\site-packages\octoprint_octolapse\__init__.py", line 1999, in load_settings
+    new_settings, defaults_loaded = OctolapseSettings.load(
+  File "c:\OctoPrint\venv\lib\site-packages\octoprint_octolapse\settings.py", line 2406, in load
+    new_settings = OctolapseSettings.create_from_iterable(
+  File "c:\OctoPrint\venv\lib\site-packages\octoprint_octolapse\settings.py", line 2528, in create_from_iterable
+    new_object.update(iterable)
+  File "c:\OctoPrint\venv\lib\site-packages\octoprint_octolapse\settings.py", line 108, in update
+    Settings._update(self, iterable)
+  File "c:\OctoPrint\venv\lib\site-packages\octoprint_octolapse\settings.py", line 116, in _update
+    if not isinstance(iterable, collections.Iterable):
+AttributeError: module 'collections' has no attribute 'Iterable'
+2021-11-12 15:10:32,061 - octolapse.__init__ - INFO - Octolapse - is loading template configurations.
+2021-11-12 15:11:20,574 - octolapse.__init__ - ERROR - Unable to load values from Octolapse.Settings, it hasn't been initialized yet. Please wait a few minutes and try again.  If the problem persists, please check plugin_octolapse.log for exceptions. 
